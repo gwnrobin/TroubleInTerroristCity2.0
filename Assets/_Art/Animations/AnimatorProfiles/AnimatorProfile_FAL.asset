@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e81f2bb604158ac3e2406f16030f1, type: 3}
   m_Name: AttachHandLayerSettings
   m_EditorClassIdentifier: 
-  rigAsset: {fileID: 11400000, guid: 20c86149126a2b24cb88e9fc185cbd50, type: 2}
-  alpha: 1
+  rigAsset: {fileID: 11400000, guid: 47e31814c8a974d4c8a78181d685422a, type: 2}
+  alpha: 0
   curveBlending:
   - name: MaskAttachHand
     mode: 1
@@ -24,21 +24,21 @@ MonoBehaviour:
   customHandPose: {fileID: 0}
   handBone:
     name: Left_Hand
-    index: 18
+    index: 19
     isVirtual: 0
   ikHandBone:
     name: IK LeftHand
-    index: 51
+    index: 48
     isVirtual: 0
   ikWeaponBone:
     name: IK WeaponBone
-    index: 48
+    index: 46
     isVirtual: 0
   weaponBone:
     name: WeaponBone
-    index: 84
+    index: 83
     isVirtual: 0
-  elementChainName: LeftHand
+  elementChainName: LeftHandChain
   handPoseOffset:
     position: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0, w: 1}
@@ -56,7 +56,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b80ecb68a9ad4fccb78b8c9a53183567, type: 3}
   m_Name: LookLayerSettings
   m_EditorClassIdentifier: 
-  rigAsset: {fileID: 11400000, guid: 20c86149126a2b24cb88e9fc185cbd50, type: 2}
+  rigAsset: {fileID: 11400000, guid: 47e31814c8a974d4c8a78181d685422a, type: 2}
   alpha: 1
   curveBlending:
   - name: LookLayerWeight
@@ -96,13 +96,13 @@ MonoBehaviour:
     cachedClampedAngle: {x: 17, y: 17}
   - rigElement:
       name: Neck
-      index: 40
+      index: 41
       isVirtual: 0
     clampedAngle: {x: 17, y: 17}
     cachedClampedAngle: {x: 17, y: 17}
   - rigElement:
       name: Head
-      index: 41
+      index: 42
       isVirtual: 0
     clampedAngle: {x: 17, y: 17}
     cachedClampedAngle: {x: 17, y: 17}
@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9861c1a9af9b4f6c9fe07e8768acf6ad, type: 3}
   m_Name: BlendingLayerSettings
   m_EditorClassIdentifier: 
-  rigAsset: {fileID: 11400000, guid: 20c86149126a2b24cb88e9fc185cbd50, type: 2}
+  rigAsset: {fileID: 11400000, guid: 47e31814c8a974d4c8a78181d685422a, type: 2}
   alpha: 1
   curveBlending:
   - name: ProneWeight
@@ -175,8 +175,7 @@ MonoBehaviour:
     source: 0
   linkDynamically: 0
   isStandalone: 0
-  desiredPose: {fileID: -203655887218126122, guid: ab52827a2b7d1cb45b782d25e9a4007f,
-    type: 3}
+  desiredPose: {fileID: -203655887218126122, guid: ab52827a2b7d1cb45b782d25e9a4007f, type: 3}
   blendingElements:
   - elementToBlend:
       name: Spine
@@ -198,13 +197,13 @@ MonoBehaviour:
     cacheBlendedResult: 0
   - elementToBlend:
       name: Neck
-      index: 40
+      index: 41
       isVirtual: 0
     weight: 0.3
     cacheBlendedResult: 0
   - elementToBlend:
       name: Head
-      index: 41
+      index: 42
       isVirtual: 0
     weight: 0
     cacheBlendedResult: 0
@@ -233,7 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46d2bcb1afe44927beb4c76a1f1a2d76, type: 3}
   m_Name: ViewLayerSettings
   m_EditorClassIdentifier: 
-  rigAsset: {fileID: 11400000, guid: 20c86149126a2b24cb88e9fc185cbd50, type: 2}
+  rigAsset: {fileID: 11400000, guid: 47e31814c8a974d4c8a78181d685422a, type: 2}
   alpha: 1
   curveBlending:
   - name: FullBodyWeight
@@ -245,7 +244,7 @@ MonoBehaviour:
   ikHandGun:
     element:
       name: IK WeaponBone
-      index: 48
+      index: 46
       isVirtual: 0
     pose:
       position: {x: 0.03, y: 0.02, z: 0}
@@ -256,7 +255,7 @@ MonoBehaviour:
   ikHandRight:
     element:
       name: IK RightHand
-      index: 49
+      index: 47
       isVirtual: 0
     pose:
       position: {x: 0, y: 0, z: 0}
@@ -267,7 +266,7 @@ MonoBehaviour:
   ikHandLeft:
     element:
       name: IK LeftHand
-      index: 51
+      index: 48
       isVirtual: 0
     pose:
       position: {x: 0, y: 0, z: 0}
@@ -287,14 +286,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2035f9c45b0d4bc2ba0f13d0624fa523, type: 3}
   m_Name: IkMotionLayerSettings
   m_EditorClassIdentifier: 
-  rigAsset: {fileID: 11400000, guid: 20c86149126a2b24cb88e9fc185cbd50, type: 2}
+  rigAsset: {fileID: 11400000, guid: 47e31814c8a974d4c8a78181d685422a, type: 2}
   alpha: 1
   curveBlending: []
   linkDynamically: 0
   isStandalone: 0
   boneToAnimate:
     name: IK WeaponBone
-    index: 48
+    index: 46
     isVirtual: 0
   rotationCurves:
     x:
@@ -459,7 +458,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dee9c1da9424d8498badb5370764946, type: 3}
   m_Name: PoseOffsetLayerSettings
   m_EditorClassIdentifier: 
-  rigAsset: {fileID: 11400000, guid: 20c86149126a2b24cb88e9fc185cbd50, type: 2}
+  rigAsset: {fileID: 11400000, guid: 47e31814c8a974d4c8a78181d685422a, type: 2}
   alpha: 1
   curveBlending:
   - name: AimingWeight
@@ -472,7 +471,7 @@ MonoBehaviour:
   - pose:
       element:
         name: IK WeaponBone
-        index: 48
+        index: 46
         isVirtual: 0
       pose:
         position: {x: 0, y: 0.01, z: 0}
@@ -498,7 +497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40d029240c6ad3a418c71ce490095bed, type: 3}
   m_Name: TurnLayerSettings
   m_EditorClassIdentifier: 
-  rigAsset: {fileID: 11400000, guid: 20c86149126a2b24cb88e9fc185cbd50, type: 2}
+  rigAsset: {fileID: 11400000, guid: 47e31814c8a974d4c8a78181d685422a, type: 2}
   alpha: 1
   curveBlending:
   - name: SprintPoseWeight
@@ -561,7 +560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d53fe4b640f941ee8b893e5d6620b994, type: 3}
   m_Name: AnimatorProfile_FAL
   m_EditorClassIdentifier: 
-  rigAsset: {fileID: 11400000, guid: 20c86149126a2b24cb88e9fc185cbd50, type: 2}
+  rigAsset: {fileID: 11400000, guid: 47e31814c8a974d4c8a78181d685422a, type: 2}
   blendInTime: 0.3
   blendOutTime: 0.15
   easeMode:
@@ -598,28 +597,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4db65cb7efe44af90b80a2d905feee5, type: 3}
   m_Name: SwayLayerSettings
   m_EditorClassIdentifier: 
-  rigAsset: {fileID: 11400000, guid: 20c86149126a2b24cb88e9fc185cbd50, type: 2}
+  rigAsset: {fileID: 11400000, guid: 47e31814c8a974d4c8a78181d685422a, type: 2}
   alpha: 1
   curveBlending: []
   linkDynamically: 0
   isStandalone: 0
   weaponIkBone:
     name: IK WeaponBone
-    index: 48
+    index: 46
     isVirtual: 0
   rightHandElbow:
     name: IK RightElbow
-    index: 50
+    index: 49
     isVirtual: 0
   leftHandElbow:
     name: IK LeftElbow
-    index: 52
+    index: 50
     isVirtual: 0
   animatedPivotOffset: {x: 0, y: 0, z: 0}
   hintTargetWeight: 1
   headBone:
     name: Head
-    index: 41
+    index: 42
     isVirtual: 0
   freeAimClamp: 0
   freeAimInterpSpeed: 3
@@ -664,28 +663,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bf197d16fb145cabe548d0a318942ea, type: 3}
   m_Name: AdsLayerSettings
   m_EditorClassIdentifier: 
-  rigAsset: {fileID: 11400000, guid: 20c86149126a2b24cb88e9fc185cbd50, type: 2}
+  rigAsset: {fileID: 11400000, guid: 47e31814c8a974d4c8a78181d685422a, type: 2}
   alpha: 1
   curveBlending: []
   linkDynamically: 0
   isStandalone: 0
   weaponIkBone:
     name: IK WeaponBone
-    index: 48
+    index: 46
     isVirtual: 0
   rightHandElbow:
     name: IK RightElbow
-    index: 50
+    index: 49
     isVirtual: 0
   leftHandElbow:
     name: IK LeftElbow
-    index: 52
+    index: 50
     isVirtual: 0
   animatedPivotOffset: {x: 0, y: 0, z: 0}
   hintTargetWeight: 0.5
   aimTargetBone:
-    name: CameraSocket
-    index: 46
+    name: Camera
+    index: 51
     isVirtual: 0
   aimingEaseMode:
     easeFunc: 1
@@ -727,7 +726,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b3ccac29af4438596c596412bc1d424, type: 3}
   m_Name: AdditiveLayerSettings
   m_EditorClassIdentifier: 
-  rigAsset: {fileID: 11400000, guid: 20c86149126a2b24cb88e9fc185cbd50, type: 2}
+  rigAsset: {fileID: 11400000, guid: 47e31814c8a974d4c8a78181d685422a, type: 2}
   alpha: 1
   curveBlending:
   - name: FullBodyWeight
@@ -738,21 +737,21 @@ MonoBehaviour:
   isStandalone: 0
   weaponIkBone:
     name: IK WeaponBone
-    index: 48
+    index: 46
     isVirtual: 0
   rightHandElbow:
     name: IK RightElbow
-    index: 50
+    index: 49
     isVirtual: 0
   leftHandElbow:
     name: IK LeftElbow
-    index: 52
+    index: 50
     isVirtual: 0
   animatedPivotOffset: {x: 0, y: 0, z: 0}
   hintTargetWeight: 0.8
   additiveBone:
     name: WeaponBoneAdditive
-    index: 85
+    index: 84
     isVirtual: 0
   interpSpeed: 0
   aimingInputProperty: AimingWeight
@@ -769,7 +768,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 423666032fed41d5935519fc922acb88, type: 3}
   m_Name: PoseSamplerLayerSettings
   m_EditorClassIdentifier: 
-  rigAsset: {fileID: 11400000, guid: 20c86149126a2b24cb88e9fc185cbd50, type: 2}
+  rigAsset: {fileID: 11400000, guid: 47e31814c8a974d4c8a78181d685422a, type: 2}
   alpha: 1
   curveBlending:
   - name: FullBodyWeight
@@ -788,37 +787,38 @@ MonoBehaviour:
     rotation: {x: 0.70710677, y: 0, z: 0, w: 0.70710677}
     scale: {x: 1, y: 1, z: 1}
   overwriteRoot: 1
+  overwriteWeaponBone: 0
   ikWeaponBone:
     name: IK WeaponBone
-    index: 48
+    index: 46
     isVirtual: 0
   ikHandRight:
     name: IK RightHand
-    index: 49
+    index: 47
     isVirtual: 0
   ikHandLeft:
     name: IK LeftHand
-    index: 51
+    index: 48
     isVirtual: 0
   ikHandRightHint:
     name: IK RightElbow
-    index: 50
+    index: 49
     isVirtual: 0
   ikHandLeftHint:
     name: IK LeftElbow
-    index: 52
+    index: 50
     isVirtual: 0
   weaponBoneRight:
     name: IK WeaponBoneRight
-    index: 78
+    index: 79
     isVirtual: 0
   weaponBoneLeft:
     name: IK WeaponBoneLeft
-    index: 39
+    index: 40
     isVirtual: 0
   weaponBone:
     name: WeaponBone
-    index: 84
+    index: 83
     isVirtual: 0
   pelvis:
     name: Hips
@@ -842,7 +842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3f7bdea6e60413188cbfd0bf60e0b8a, type: 3}
   m_Name: CollisionLayerSettings
   m_EditorClassIdentifier: 
-  rigAsset: {fileID: 11400000, guid: 20c86149126a2b24cb88e9fc185cbd50, type: 2}
+  rigAsset: {fileID: 11400000, guid: 47e31814c8a974d4c8a78181d685422a, type: 2}
   alpha: 1
   curveBlending:
   - name: FullBodyWeight
@@ -853,7 +853,7 @@ MonoBehaviour:
   isStandalone: 0
   weaponIkBone:
     name: IK WeaponBone
-    index: 48
+    index: 46
     isVirtual: 0
   primaryPose:
     position: {x: 0, y: 0.05, z: -0.15}
@@ -883,34 +883,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c6c8dc558de4772963ae8c720fb2300, type: 3}
   m_Name: IkLayerSettings
   m_EditorClassIdentifier: 
-  rigAsset: {fileID: 11400000, guid: 20c86149126a2b24cb88e9fc185cbd50, type: 2}
+  rigAsset: {fileID: 11400000, guid: 47e31814c8a974d4c8a78181d685422a, type: 2}
   alpha: 1
   curveBlending: []
   linkDynamically: 0
   isStandalone: 0
   rightHand:
     name: Right_Hand
-    index: 57
+    index: 58
     isVirtual: 0
   leftHand:
     name: Left_Hand
-    index: 18
+    index: 19
     isVirtual: 0
   rightHandIk:
     name: IK RightHand
-    index: 49
+    index: 47
     isVirtual: 0
   leftHandIk:
     name: IK LeftHand
-    index: 51
+    index: 48
     isVirtual: 0
   rightHandHint:
     name: IK RightElbow
-    index: 50
+    index: 49
     isVirtual: 0
   leftHandHint:
     name: IK LeftElbow
-    index: 52
+    index: 50
     isVirtual: 0
   rightFoot:
     name: Right_Foot
@@ -922,11 +922,11 @@ MonoBehaviour:
     isVirtual: 0
   rightFootIk:
     name: IK RightFoot
-    index: 86
+    index: 85
     isVirtual: 0
   leftFootIk:
     name: IK LeftFoot
-    index: 88
+    index: 86
     isVirtual: 0
   rightFootHint:
     name: IK RightKnee
@@ -934,5 +934,5 @@ MonoBehaviour:
     isVirtual: 0
   leftFootHint:
     name: IK LeftKnee
-    index: 89
+    index: 88
     isVirtual: 0

@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a38f36b54b84df3873b796d6728c637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animatorProfile: {fileID: 11400000, guid: 49452d198240a2a4697823ebc779e18a, type: 2}
+  animatorProfile: {fileID: 11400000, guid: 3117d2ccdfeca604fb4f989c0dee4ba0, type: 2}
   defaultAimPoint: {fileID: 5596342089266124524}
 --- !u!1 &3072488125693394169
 GameObject:
@@ -1192,6 +1192,10 @@ PrefabInstance:
     - target: {fileID: 2119732930320603471, guid: fe1f1f48cc21230409390bdd7b400382, type: 3}
       propertyPath: m_Name
       value: AKHexagonSuppressor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3447157841228368439, guid: fe1f1f48cc21230409390bdd7b400382, type: 3}
+      propertyPath: attachmentLayerSettings.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4307730104162181947, guid: fe1f1f48cc21230409390bdd7b400382, type: 3}
       propertyPath: m_RootOrder
