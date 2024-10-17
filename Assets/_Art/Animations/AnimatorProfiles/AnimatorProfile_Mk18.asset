@@ -422,7 +422,7 @@ MonoBehaviour:
         isVirtual: 0
       pose:
         position: {x: 0, y: 0, z: 0}
-        rotation: {x: 0.6652956, y: -0.000000065308846, z: -0.000000058198548, w: -0.74658006}
+        rotation: {x: -0.66183823, y: -0.07609423, z: -0.06781078, w: 0.7426853}
         scale: {x: 0, y: 0, z: 0}
       space: 0
       modifyMode: 0
